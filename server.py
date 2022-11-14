@@ -23,19 +23,6 @@ def result_render():
 def reset():
     session.clear()
     return redirect('/')      
-
-# @app.route("/reset", methods=["POST"])
-# def reset_session():
-#     return redirect("/destroy_session")
-
-# @app.route("/destroy_session")
-# def destroy():
-#     session.clear()
-#     global attempts
-#     attempts = 0
-#     global randomNum
-#     randomNum = random.randint(1, 100)
-#     return redirect("/")
     
 if __name__ == "__main__":
     app.run(debug=True)
