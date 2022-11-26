@@ -30,14 +30,14 @@ class Dojo:
         is_valid = True
         if len(survey['name']) < 3:
             is_valid = False
-            flash("Name must be at least 3 characters!")
+            flash("Name must be at least 3 characters!", "name")
         if len(survey['location']) < 1:
             is_valid = False
-            flash("Choose a dojo location!")
+            flash("Choose a dojo location!", "location")
         if len(survey['language']) < 1:
             is_valid = False
-            flash("Choose a favorite language!")
+            flash("Choose a favorite language!", "language")
         if len(survey['comment']) < 5:
             is_valid = False
-            flash("Comments must be at least 5 characters!")
+            flash("Comments must be at least 5 characters!", "comment")
         return is_valid
