@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,16 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Dojo Survey</title>
 </head>
+
 <body>
     <h1>Submitted Info:</h1>
-    <h3>Name: {{session['name']}}</h3>
-    <h3>Dojo Location: {{session['location']}}</h3>
-    <h3>Favorite Language: {{session['language']}}</h3>
-    <h3>Comment: {{session['comment']}}</h3>  
+    <h3>Name: {{answer.name}}</h3>
+    <h3>Dojo Location: {{answer.location}}</h3>
+    <h3>Favorite Language: {{answer.language}}</h3>
+    <h3>Comment: {{answer.comment}}</h3>
     <div class="col-sm-10">
         <a href="/reset" class="btn btn-primary">Go Back</a>
     </div>
 </body>
+
 </html>
